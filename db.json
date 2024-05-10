@@ -1,0 +1,80 @@
+{
+  "tasks": [
+    {
+      "title": "Clear logs",
+      "description": "Remove all logs from codebase module tasks",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "title": "dummy task 101",
+      "description": " this is a dummy task",
+      "id": 4
+    },
+    {
+      "title": "cv",
+      "description": "kkk",
+      "completed": true,
+      "id": 10
+    },
+    {
+      "title": "New Task ",
+      "description": "This is a new task\n",
+      "id": 11
+    },
+    {
+      "title": "Task A",
+      "description": "Lorem Ipsung",
+      "completed": true,
+      "id": 12
+    },
+    {
+      "title": "Update README.md",
+      "description": "Add detailed instructions on how to run the project locally",
+      "completed": false,
+      "id": 22
+    },
+    {
+      "title": "Implement Authentication",
+      "description": "Integrate authentication system using JWT for user authentication",
+      "completed": false,
+      "id": 13
+    },
+    {
+      "title": "Optimize Database Queries",
+      "description": "Identify and optimize slow-performing database queries in the application",
+      "completed": false,
+      "id": 15
+    },
+    {
+      "title": "Refactor Codebase",
+      "description": "Refactor existing code to improve readability and maintainability",
+      "completed": false,
+      "id": 16
+    },
+    {
+      "title": "Implement API Documentation",
+      "description": "Generate API documentation using tools like Swagger or Postman",
+      "completed": true,
+      "id": 18
+    },
+    {
+      "title": "Integrate CI/CD Pipeline",
+      "description": "Set up continuous integration and continuous deployment pipeline for automated testing and deployment",
+      "completed": false,
+      "id": 19
+    },
+    {
+      "title": "Review pull requests.",
+      "description": "Review pull requests.",
+      "completed": false,
+      "id": 23
+    },
+    {
+      "title": "Tiktok",
+      "description": "Create a tiktok mockup app in angular material ",
+      "completed": true,
+      "id": 24
+    }
+  ]
+}
