@@ -12,10 +12,7 @@
         </div>
       </mat-card-header>
       <mat-card-content>
-        <ng-container *ngIf="tasks.length == 0 else tasksView">
-          <p>There are not tasks at the moment!</p>
-        </ng-container>
-        <ng-template #tasksView><div class="table-container text-capitalize">
+        <div class="table-container text-capitalize">
           <table mat-table [dataSource]="dataSource">
 
             <ng-container matColumnDef="no">
@@ -72,7 +69,7 @@
           <mat-paginator [pageSizeOptions]="[10, 20,50,100]"
                          showFirstLastButtons
                          aria-label="Select page">
-          </mat-paginator></ng-template>
+          </mat-paginator>
       </mat-card-content>
     </mat-card>
 
