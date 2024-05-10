@@ -5,7 +5,6 @@ import {finalize, Subject, takeUntil} from "rxjs";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatTableDataSource} from "@angular/material/table";
 import Swal from "sweetalert2";
-import {MatSnackBar} from "@angular/material/snack-bar";
 import {Router} from "@angular/router";
 import {UtilService} from "../../services/util.service";
 
@@ -93,13 +92,13 @@ export class TaskListComponent implements AfterViewInit,OnInit,OnDestroy{
     this.tasksService.deleteTask(String(task.id)).pipe(
       takeUntil(this.destroy$),
     ).subscribe({
-        next:(task)=>{
+        next:()=>{
           this.utilService.success("Task Deleted Successfully!!");
           this.tasks.splice(index,1);
           this.tasks = [...this.tasks];
           this.setTaskData(this.tasks);
         },
-        error:(error)=>{
+        error:()=>{
           this.utilService.error("Could not delete this task!!")
         }
       }
@@ -113,11 +112,11 @@ export class TaskListComponent implements AfterViewInit,OnInit,OnDestroy{
     //set this
     this.tasksService.updateTask(String(task.id),task).subscribe(
       {
-        next:(response)=>{
+        next:()=>{
           this.setTaskData(this.tasks);
           this.utilService.success(`Task ${task.title}'s status updated successfully`);
         },
-        error:(error)=>{
+        error:()=>{
           this.utilService.error("Could not update status for this task")
         },
       }
